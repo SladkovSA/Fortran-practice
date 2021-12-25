@@ -39,13 +39,13 @@ program zadanie1
  end program
  
  
- nevyazki (a,b,c,ip,x1,x2) !ğàñ÷åò íåâÿçîê
+ nevyazki (a,b,c,ip,x1,x2) !Ã°Ã Ã±Ã·Ã¥Ã² Ã­Ã¥Ã¢Ã¿Ã§Ã®Ãª
     real a,b,c,x1,x2
     integer ip
     
  
  
- subroutine coeffic (a,b,c,ip,x1,x2) !ğàñ÷åò êîıôôèöèåíòîâ
+ subroutine coeffic (a,b,c,ip,x1,x2) !Ã°Ã Ã±Ã·Ã¥Ã² ÃªÃ®Ã½Ã´Ã´Ã¨Ã¶Ã¨Ã¥Ã­Ã²Ã®Ã¢
     real a,b,c,x1,x2
     integer ip
     if (ip==2) then 
@@ -62,7 +62,7 @@ program zadanie1
  
  
  
- subroutine kvad (a,b,c,ip,x1,x2) !ğåøåíèå êâàäğàòíîãî óğàâíåíèÿ
+ subroutine kvad (a,b,c,ip,x1,x2) !Ã°Ã¥Ã¸Ã¥Ã­Ã¨Ã¥ ÃªÃ¢Ã Ã¤Ã°Ã Ã²Ã­Ã®Ã£Ã® Ã³Ã°Ã Ã¢Ã­Ã¥Ã­Ã¨Ã¿
      real a,b,c,x1,x2
      integer ip
  if (a==0) then
@@ -70,14 +70,14 @@ program zadanie1
    if (c/=0) then 
     print*, 'no solution'
     go to 2
-   else !åñëè à, b, ñ = 0
+   else !Ã¥Ã±Ã«Ã¨ Ã , b, Ã± = 0
    print*, 'infinite number of solutions'
    end if
-  else !åñëè b!= 0 :
+  else !Ã¥Ã±Ã«Ã¨ b!= 0 :
    if (c==0) then
       x1=0
       print*, 'x=0'
-   else ! òå åñëè ñ!=0
+   else ! Ã²Ã¥ Ã¥Ã±Ã«Ã¨ Ã±!=0
     x1=(-c)/b
     print*, 'only one solution x=',x1
    end if
@@ -88,7 +88,7 @@ program zadanie1
    x1=0
    x2=(-b)/a
    print*, 'x1=', x1, 'x2=',x2
-  else ! à è ñ /= 0
+  else ! Ã  Ã¨ Ã± /= 0
    d=b**2-4*a*c
    if (d>0) then
     x1= ((sqrt(d))-b)/(2*a)
